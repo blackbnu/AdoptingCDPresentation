@@ -1,0 +1,59 @@
+1.   5   Intro     
+	1.1 Definir o que é CD
+    
+2.  4x10 Content
+	2.1 Arquitetura
+			Trunk based dev / toggle
+				differentes estratégias de branching
+					- feature branch não é continuous integration = feedback demorado
+						- feature branching is a poor man's modular architecture - dan bodart
+					- HP laserjet firmware team graph (antes e depois)
+				diferentes tipos de toggles
+			Modularização / micro services
+				arquitetura modular -> microservices
+					- tradeoffs e.g. complexidade na orquestração e infra
+					-
+	2.2 Confiança no código
+			CI
+				Automação de build
+				Automação de testes  
+			Pairing / code review  
+
+	2.3 Processo Eficiente
+			Automação de deploy
+			Zero downtime deployment
+			Backward compatible db changes
+
+	2.4 Automação INFRA
+		Monitoramento
+
+3.   5   Closing
+4.   10  Q&A 	
+
+
+
+organization, architectural, process
+ - NOT - 
+ tools, code, infrastructure
+
+
+ start with CI
+ 	 - small steps, day by day
+
+ what is CD?
+ 	- reduce the cost, time, and risk of delivering incremental changes to users
+ 	why?
+ 		- we wanna build the right thing (biggest source of waste in our job) - fast feedback in hipotesis
+
+ 	SHOW THE LEAN STARTUP CYCLE
+
+ 	- reduce risk of release - graphs by john allspawn
+ 		- done, done done > works on my machine, tested, in production
+
+ Deployment pipeline
+
+
+ - You are deploying too often! Please, slowdown! - good smell
+
+ - Forget about devops, you need a multiskilled team
+ 	
