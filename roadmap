@@ -30,6 +30,115 @@
 3.   5   Closing
 4.   10  Q&A 	
 
+------
+1.   5   Intro     
+	1.1. definir o que é CD
+		1.1.1. Implementing continuous delivery means making sure your software is always production ready throughout its entire lifecycle – that any build could potentially be released to users at the touch of a button using a fully automated process in a matter of seconds or minutes. (http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/)
+		1.1.2. 
+
+		1.6. Principles
+		1.6.1. Create a repeatable, reliable process for releasing software
+			- Provisioning boxes
+			- Deployments
+			- Database migrations
+		1.6.2. Automate almost everything (build, deploy, test, release / use humans for high value stuff)
+		1.6.3. Keep everything in version control
+		1.6.4. If it hurts, do it more often, and bring the pain forward
+		1.6.5. Build quality in (no inspection, process insures quality)
+		1.6.6. Done means released
+		1.6.7. Everybody is responsible for delivery
+		1.6.8. Continuous improvement
+
+	1.2. Porque? 
+		1.2.1. Do ponto de vista do usuário
+			1.2.1.1. Menos tempo entre idéia e estar pronto para utilizar
+			1.2.1.2. Feedback constante do usuário - A funcionalidade não precisa estar 100% completa para ser validada
+		1.2.2. Do ponto de vista técnico
+			1.2.2.1. Mudanças pequenas são mais fácil de controlar e corrigir problemas
+				Imagem ilustrando
+
+	1.4. Problemas
+		- Lead Time is too long
+		- The Last Mile is too painful
+		- Poor colaboration
+		- Lots of manual work
+		- Org structure
+		- Lack of knowledge and tools
+
+	1.5. The Ideal
+		- Software always production-ready
+		- Reliable deployments
+
+		- Everyone can self-service deployments
+		- Release happens according to business need
+    
+2.  4x10 Content
+	2.1 Arquitetura
+			- Trunk based dev / toggle
+				Everyone commits to the mainline everyday
+				Merge hell image
+				Feature Toggles
+				Branch by abstraction
+			Modularização / micro services
+				Component / Service
+					Part of your system could be swapped out for another implementation
+					Make system more maintainable (better encapsulation, lower coupling)
+					Make system easier to build test
+					Enable colaboration
+				Building
+					Start monolithic
+					Fast feedback
+
+
+	
+	2.2 Confiança no código
+		2.2.1. Problema - Para poder 
+		2.2.2. Build Pipeline - http://continuousdelivery.com/2010/02/continuous-delivery/
+			- Comprehensive configuration management
+			- Excellent automated tests at all levels
+			- CI
+				Automação de build
+				Automação de testes
+				- Testes unitários
+				- Acceptance stage (end-to-end tests in production-like environment)
+				- Manual stages (UAT, staging, integration, prod)
+			- Test piramyd
+		2.2.3. Practices
+			- Only build your binaries once
+			- Deploy the same way to every environment
+			- Smoke test your deployments
+			- Keep your environments similar
+			- If anything fails, stop the line
+				
+			Pairing / code review  
+
+	2.3 Processo Eficiente
+			Automação de deploy
+				Database migrations (deltas)
+					Have version control for db changes
+					Add tables columns in one deploy / remove columns tables in following deploy
+			Zero downtime deployment
+				Blue-green deployment
+				Canary release
+				Dark launching
+			Backward compatible db changes
+
+	2.4 Automação INFRA
+		Automação
+			Desired state in version control
+		Monitoramento
+
+3.   5   Closing
+4.   10  Q&A
+
+-----
+
+Interesting things:
+- RBS case (https://en.wikipedia.org/wiki/2012_RBS_computer_system_problems / http://www.theregister.co.uk/2012/06/26/rbs_natwest_ca_technologies_outsourcing/)
+- Continous Delivery não é Continuos Deployment, mas permite que se faça continuos deployment se fizer sentido
+- Exemplos (Facebook, Flickr e Etsy)
+
+-----
 
 
 organization, architectural, process
