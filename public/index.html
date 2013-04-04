@@ -140,7 +140,7 @@
 							<li>Compile os binários apenas uma vez</li>
 							<li>Testes automatizados em todos os níveis</li>
 							<li>Faça o deploy da mesma maneira em todos ambientes</li>
-							<li>Smoke tests e cada deploy</li>
+							<li>Smoke tests a cada deploy</li>
 							<li>Mantenha os ambientes similares</li>
 							<li>Se algo falhar, stop the line</li>
 						</ul>
@@ -158,18 +158,26 @@
 
 				<section>
 					<section>
-						<h2>Branching Strategies</h2>
+						<h1>Branching Strategies</h1>
 					</section>
 					<section>
 						<ul>
-							<li>Git-Flow</li>
-							<li>Pull requests para um release branch (GitHub)</li>
-							<li>TBD + branch por release</li>
-							<li>TBD + release a partir do trunk</li>
+							<li><a href="http://nvie.com/posts/a-successful-git-branching-model/">Git-Flow</a></li>
+							<li><a href="http://scottchacon.com/2011/08/31/github-flow.html">Pull requests para um release branch (GitHub)</a></li>
+							<li><a href="http://paulhammant.com/blog/branch_by_abstraction.html/">TBD + branch por release</a></li>
+							<li><a href=""> TBD + release a partir de trunk</a></li>
 						</ul>
 					</section>
 					<section>
-						<p>mostrar TBD + deploy from trunk baseado na nossa experiência</p>
+						<blockquote>Feature Branching is a poor man's modular architecture, instead of building systems with the ability to easy swap in and out features at runtime/deploytime they couple themselves to the source control providing this mechanism through manual merging.</blockquote>
+						<p>Dan Bodart</p>
+					</section>
+					<section>
+						<p>featuer branches</p>
+						<p>http://martinfowler.com/bliki/FeatureBranch.html</p>
+					</section>
+					<section>
+						<p>qual a solução?</p>
 					</section>
 					<section>
 						<p>Links úteis</p>
@@ -181,7 +189,11 @@
 				</section>
 				<section>
 					<section>
-						<h2>Feature toggles</h2>
+						<h1>Feature toggles + Branch por abstração</h1>
+					</section>
+					<section>
+						<p>Toggles - Esconder funcionalidades novas</p>
+						<p>Branch por abstração - Mudanças de grande escala de maneira incremental</p>
 					</section>
 					<section>
 					<h2>Toggle code snipet</h2>
