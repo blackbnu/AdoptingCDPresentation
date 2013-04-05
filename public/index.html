@@ -94,8 +94,7 @@
 					<section>
 						<h2>O que é?</h2>
 						<p>Ter certeza de que o software está pronto para ser entregue durante todo o seu ciclo de vida - qualquer build pode ser entregue ao cliente com o apertar de um botão usando processos automatizados em questão de segundos ou minutos </p>
-						<p> Making sure your software is always production ready throughout its entire lifecycle – that any build could potentially be released to users at the touch of a button using a fully automated process in a matter of seconds or minutes.</p>
-						<p>http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/</p>
+						<a href="http://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/"></a>
 					</section>
 					<section>
 						<h2>Por que adotar?</h2>
@@ -104,7 +103,7 @@
 						<li>Entregar a funcionalidade certa através do rápido feedback sobre hipóteses</li>
 					</section>
 					<section>
-						<h3>Reduzindo batch size</h3>
+						<h3>Reduzindo tamanho do release</h3>
 						<img src="img/humble2_fig04.jpg" alt="release">
 					</section>
 					<section>
@@ -118,6 +117,17 @@
 							<li>Keep everything in version control</li>
 							<li>Pronto significa entregue</li>
 							<li>Todo mundo é responsável pela entrega</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Práticas</h2>
+						<ul>
+							<li>Compile os artefatos apenas uma vez</li>
+							<li>Testes automatizados em todos os níveis</li>
+							<li>Faça o deploy da mesma maneira em todos ambientes</li>
+							<li>'Teste de fumaça' a cada deploy</li>
+							<li>Mantenha os ambientes similares</li>
+							<li>Se algo falhar, stop the line</li>
 						</ul>
 					</section>
 					<section>
@@ -135,32 +145,21 @@
 						<p>waterfall -> iteração -> flow</p>
 					</section>
 					<section>
-						<h2>User Stories</p>
+						<h2>Funcionalidades</p>
 						<img src="img/UserStories.png" alt="UserStories">
 					</section>
 					<section>
-						<h2>Iterações como 'Boundaries'</p>
+						<h2>Iteração 'clássica'</p>
 						<img src="img/iterations.png" alt="Iterations">
 					</section>
 					<section>
-						<h2>Iterações como checkpoints</p>
+						<h2>Iteração como checkpoint</p>
 						<img src="img/checkpoints.png" alt="Checkpoints">
 					</section>
 				</section>
 				<section>
 					<section>
 						<h1>Confiança no Código</h1>
-					</section>
-					<section>
-						<h2>Práticas</h2>
-						<ul>
-							<li>Compile os artefatos apenas uma vez</li>
-							<li>Testes automatizados em todos os níveis</li>
-							<li>Faça o deploy da mesma maneira em todos ambientes</li>
-							<li>Smoke tests a cada deploy</li>
-							<li>Mantenha os ambientes similares</li>
-							<li>Se algo falhar, stop the line</li>
-						</ul>
 					</section>
 					<section>
 						<img width="150%" height="150%" src="img/pipeline_sequence.png" alt="release">
@@ -172,7 +171,6 @@
 						<img width="150%" height="150%" src="img/TheAgileTestingQuadrants.png" alt="release">
 					</section>
 				</section>
-
 				<section>
 					<section>
 						<h1>Branching Strategies</h1>
