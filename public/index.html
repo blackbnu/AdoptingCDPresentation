@@ -228,7 +228,16 @@
 					</section>
 					<section>
 						<h2>Automação de deployment</h2>
-						<h4 class="fragment">How do we do it: <i>ruby deploy.rb THE_APP 1234 PROD</i></h4>
+						<div class="fragment">
+							<h4>How do we do it: <i>ruby deploy.rb THE_APP 1234 PROD</i></h4>
+							<small><i><div align="left">
+								server_name = {<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;LOCAL: "localhost",<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;QA: "qaserver",<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;PROD: "prodserver"<br/>
+								}
+							</div></i></small>
+						</div>
 					</section>
 					<section>
 						<img width="65%" height="65%" src="img/go_pipeline.png" alt="go pipeline" />
