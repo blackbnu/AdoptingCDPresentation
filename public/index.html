@@ -94,8 +94,8 @@
 					<section>
 						<h2>Por que adotar?</h2>
 						<ul>
-						<li>Reduzir custo, tempo e risco entregando mudanças incrementais ao usuário</li>
-						<li>Entregar a funcionalidade certa através do rápido feedback sobre hipóteses</li>
+						<li class="fragment">Reduzir custo, tempo e risco entregando mudanças incrementais ao usuário</li>
+						<li class="fragment">Entregar a funcionalidade certa através do rápido feedback sobre hipóteses</li>
 					</section>
 					<section>
 						<h3>Reduzindo tamanho do release</h3>
@@ -275,29 +275,27 @@
 						<img src="img/branch-all-the-things.jpg" alt="Checkpoints">
 					</section>
 					<section>
-						<h3>Feature branch</h3>
+						<h2>Feature branch</h2>
 						<img src="img/featurebranch0.png" alt="featurebranch">
 					</section>
 					<section>
-						<h3>Merge hell</h3>
+						<h2>Merge hell</h2>
 						<img src="img/featurebranch.png" alt="featurebranch">
 					</section>
 					<section>
-						<p>mostrar exemplo hp com esforço pra merges</p>
+						<img src="img/hp-merge.png" alt="featurebranch">
 					</section>
 					<section>
 						<blockquote>Feature Branching is a poor man's modular architecture, instead of building systems with the ability to easy swap in and out features at runtime/deploytime they couple themselves to the source control providing this mechanism through manual merging.</blockquote>
 						<p>Dan Bodart</p>
 					</section>
 					<section>
-						<h3>Continuous Integration</h3>
-						<img src="img/ci.png" alt="release" />
+						<h2>Continuous Integration</h2>
+						<img src="img/ci.png" alt="ci">
 					</section>
 					<section>
-						<img src="img/multi-branch-deployable.jpg" alt="release" />
-					</section>
-					<section>
-						<img src="img/single-trunk.jpg" alt="release" />
+						<h2>Trunk Based Development</h2>
+						<img src="img/single-trunk.jpg" alt="branch-for-release">
 					</section>
 					<section>
 						<p>Links úteis</p>
@@ -312,23 +310,60 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						<h1>Feature toggle + Branch por abstração</h1>
+					<section>	
+						<h1>Feature toggles</h1>
 					</section>
 					<section>
-						<p>Toggles - Esconder funcionalidades novas</p>
-						<p>Branch por abstração - Mudanças de grande escala de maneira incremental</p>
+						<h3>Escondendo Funcionalidades</h3>
+						<ul>
+							<li class="fragment">'Work in progress'</li>
+							<li class="fragment">Features instáveis</li>
+							<li class="fragment">Estratégia de negócio</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Toggle code snipet</h2>
+						<h3>Como??</h3>
 						<pre>
 							<code contenteditable>
-								function oi ( selector ) {
-  									if( toggle ) {   
-      								}
-    							};
+if (ToggleService.GetValue("super.new.feature")) 
+	renderTemplate("html/new/petStore.html");
+else 
+	renderTemplate("html/current/petStore.html");
 							</code>
 						</pre>
+					</section>
+					<section>
+						<h2>Como??</h2>
+						<ul>
+							<li class="fragment">Static config file</li>
+							<li class="fragment">Variavel de ambiente</li>
+							<li class="fragment">Serviço externo</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Branch por</h1>
+						<h1>abstração</h1>
+						<p>Mudanças de grande escala de maneira incremental</p>
+					</section>
+					<section>
+						<img src="img/branch-abs1.png" alt="abstraction">
+					</section>
+					<section>
+						<img src="img/branch-abs2.png" alt="abstraction">
+					</section>
+					<section>
+						<img src="img/branch-abs3.png" alt="abstraction">
+					</section>
+					<section>
+						<img src="img/branch-abs4.png" alt="abstraction">
+					</section>
+					<section>
+						<img src="img/branch-abs5.png" alt="abstraction">
+					</section>
+					<section>
+						<img src="img/branch-abs6.png" alt="abstraction">
 					</section>
 				</section>
 				<section>
@@ -415,7 +450,8 @@
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				theme: Reveal.getQueryHash().theme || 'beige', // available themes are in /css/theme
+				// moon?
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
