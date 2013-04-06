@@ -60,7 +60,7 @@
 						</p>
 					</section>
 					<section>
-						<img src="img/tw-map.png" alt="tw map" />
+						<img src="img/tw-map2.jpg" alt="tw map" />
 					</section>
 					<section>
 						<h2>Com que frequência você faz releases?</h2>
@@ -179,6 +179,7 @@
 						<h2>Automação do build</h2>
 						<h4 class="fragment">O que fazemos: <span class="custom-highlight">compilação, criação de pacote e execução de testes</span></h4>
 						<h4 class="fragment">Como fazemos: <span class="custom-highlight">rake pc</span></h4>
+						<br />
 						<div class="fragment">
 							<h4>Ferramentas:</h4>
 							<ul>
@@ -227,6 +228,16 @@
 							<li>Colaboração entre cliente/dev/qa</li>
 							<li>Testes de regressão</li>
 						</ul>
+						<br /><br />
+						<div class="fragment">
+							<h4>Ferramentas:</h4>
+							<ul>
+								<li><a href="http://www.specflow.org/">Specflow</a></li>
+								<li><a href="http://www.seleniumhq.org/">Selenium</a></li>
+								<li><a href="http://watin.org/">Watin</a></li>
+								<li><a href="https://github.com/TestStack/White">White</a></li>
+							</ul>
+						</div>
 					</section>
 					<section>
 						<h2>Testes de unidade</h2>
@@ -234,6 +245,15 @@
 							<li>Construir a funcionalidade da maneira correta</li>
 							<li>Feedback técnico rápido e preciso</li>
 						</ul>
+						<br /><br />
+						<div class="fragment">
+							<h4>Ferramentas:</h4>
+							<ul>
+								<li><a href="http://www.nunit.org/">NUnit</a></li>
+								<li><a href="https://github.com/Moq">moq</a></li>
+								<li><a href="http://nsubstitute.github.io/">NSubstitute</a></li>
+							</ul>
+						</div>
 					</section>
 					<section>
 						<img width="80%" height="80%" src="img/TestAutomationPyramid.png" alt="release" />
@@ -246,7 +266,7 @@
 					<section>
 						<h2>Automação de deployment</h2>
 						<div class="fragment">
-							<h4>Como fazemos: <span class="custom-highlight">ruby deploy.rb THE_APP 1234 PROD</span></h4>
+							<h4>Como fazemos: <span class="custom-highlight">ruby deploy.rb APP-NAME 1234 PROD</span></h4>
 							<small><i><div align="left">
 								server_name = {<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;LOCAL: "localhost",<br/>
