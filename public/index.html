@@ -19,6 +19,7 @@
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/acdp.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -176,8 +177,8 @@
 					</section>
 					<section>
 						<h2>Automação do build</h2>
-						<h4 class="fragment">What do we do it: <i>compilação, criação de pacote e execução de testes</i></h4>
-						<h4 class="fragment">How do we do it: <i>rake pc</i></h4>
+						<h4 class="fragment">O que fazemos: <span class="custom-highlight">compilação, criação de pacote e execução de testes</span></h4>
+						<h4 class="fragment">Como fazemos: <span class="custom-highlight">rake pc</span></h4>
 						<div class="fragment">
 							<h4>Ferramentas:</h4>
 							<ul>
@@ -245,7 +246,7 @@
 					<section>
 						<h2>Automação de deployment</h2>
 						<div class="fragment">
-							<h4>How do we do it: <i>ruby deploy.rb THE_APP 1234 PROD</i></h4>
+							<h4>Como fazemos: <span class="custom-highlight">ruby deploy.rb THE_APP 1234 PROD</span></h4>
 							<small><i><div align="left">
 								server_name = {<br/>
 								&nbsp;&nbsp;&nbsp;&nbsp;LOCAL: "localhost",<br/>
@@ -385,6 +386,9 @@ else
 					</section>
 					<section>
 						<h2>Modularização</h2>
+						<ul>
+							<li><a href="http://www.infoq.com/presentations/Micro-Services">Micro-services</a></li>
+						</ul>
 					</section>
 					<section>
 						<h2>Técnicas de deploy para produção</h2>
@@ -400,7 +404,7 @@ else
 						<ul>
 							<li><a href="https://puppetlabs.com/">Puppet</a></li>
 							<li><a href="http://www.opscode.com/chef/">Chef</a></li>
-							<li><a href="http://chocolatey.org/"></a>Chocolatey</li>
+							<li><a href="http://chocolatey.org/">Chocolatey</a></li>
 						</ul>
 					</section>
 					<section>
@@ -408,7 +412,7 @@ else
 						<h4>Ferramentas:</h4>
 						<ul>
 							<li><a href="http://www.nagios.org/">Nagios</a></li>
-							<li><a href="http://www.logstash.net/"></a>Logstash</li>
+							<li><a href="http://www.logstash.net/">Logstash</a></li>
 							<li><a href="http://riemann.io/">Riemann</a></li>
 						</ul>
 					</section>
@@ -429,16 +433,28 @@ else
 						<h1>Sugestão de leitura</h1>
 					</section>
 					<section>
-						<img src="img/cd-book.jpg" alt="continuos delivery book" />
-						<br />
-						<small><a href="http://www.goodreads.com/book/show/8686650-continuous-delivery">Continuous Delivery by Jez Humble and David Farley</a></small>
+						<a href="http://www.goodreads.com/book/show/8686650-continuous-delivery">
+							<img width="30%" height="50%" src="img/cd-book.jpg" alt="continuos delivery book" />
+						</a>
+						<a href="http://www.goodreads.com/book/show/10127019-the-lean-startup">
+							<img width="30%" height="50%" src="img/lean-startup-book.jpg" alt="lean startup book" />
+						</a>
+						<a href="http://itrevolution.com/books/phoenix-project-devops-book/">
+							<img width="30%" height="50%" src="img/phoenix-book.jpg" alt="phoenix project book" />
+						</a>
 					</section>
 				</section>
 				<section>
-					<h2>http://acd.herokuapp.com/</h2>
-					<h3>Perguntas?</h3>
+					<h1>Perguntas?</h1>
 				</section>
-
+				<section>
+					<h1>Obrigado!</h1>
+					<h3>http://acd.herokuapp.com/</h3>
+					<h4>
+						<p>Marcelo Oliveria<br/><small>marcelo.oliveira@thoughtworks.com</small></a>
+						<p>Rafael Magrin<br/><small>rmagrin@thoughtworks.com</small></a>
+					</h4>
+				</section>
 			</div>
 		</div>
 
